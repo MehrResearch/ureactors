@@ -1,0 +1,14 @@
+numpy
+scikit-learn
+opencv-python
+tqdm
+seaborn
+matplotlib
+pandas
+ipykernel
+pyarrow
+ipywidgets
+openpyxl
+segment_anything
+torch
+torchvision
