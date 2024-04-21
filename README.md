@@ -16,18 +16,8 @@ The Jupyter notebook `particle_stats.ipynb` is used for analyzing microscope ima
 ### Setup
 The fastest way to get started is using `uv`.
 ```sh
-uv venv
+pipx run uv venv
 
-uv pip sync -r requirements-<platform>.txt
-```
-
-Where `<platform>` can be one of the following:
-* `linux_amd64`
-* `linux_arm64`
-* `macos_arm64`
-* `windows_amd64`
-
-Plain `pip` should work fine but will be slower:
-```sh
-pip install -r requirements-<platform>.txt
+pipx run uv pip sync requirements.txt
+source .venv/bin/activate
 ```

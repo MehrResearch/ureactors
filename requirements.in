@@ -11,4 +11,4 @@ ipywidgets
 openpyxl
 segment_anything
 torch
-torchvision
+torchvision<0.17
