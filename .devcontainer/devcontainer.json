@@ -23,10 +23,15 @@
 		"vscode": {
 			"extensions": [
 				"ms-python.python",
-				"ms-toolsai.jupyter"
+				"ms-toolsai.jupyter",
+				"charliermarsh.ruff"
 			]
 		}
-	}
+	},
+
+	"mounts": [
+		"source=<PATH_TO_YOUR_DATA_FOLDER>,target=/workspaces/data,type=bind,consistency=cached"
+	]
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
