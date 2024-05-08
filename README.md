@@ -11,13 +11,7 @@ The Jupyter notebook `particle_stats.ipynb` is used for analyzing microscope ima
 
 ### Requirements
 * Python 3.10+
-* [uv](https://astral.sh/uv) (recommended)
+* nvidia drivers if using a GPU for image processing (highly recommended)
 
 ### Setup
-The fastest way to get started is using `uv`.
-```sh
-pipx run uv venv
-
-pipx run uv pip sync requirements.txt
-source .venv/bin/activate
-```
+The fastest way to get started is using a dev container. Simply open the folder in Visual Studio Code (locally or on a remote machine) and select "Reopen in Container" from the notification that appears. This will build the dev container and open the folder in a new window. All dependencies will be installed automatically.
