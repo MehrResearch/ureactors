@@ -6,13 +6,15 @@
 	"image": "mcr.microsoft.com/devcontainers/python:1-3.11-bullseye",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+		"ghcr.io/va-h/devcontainers-features/uv:1": {}
+	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pipx run uv venv && pipx run uv pip install -r requirements.txt",
+	"postCreateCommand": "uv venv && uv pip install -r requirements.txt && wget -nc https://zenodo.org/records/11242499/files/Microscope%20images.zip?download=1 && unzip -d data 'Microscope images.zip?download=1' -x '__MACOSX/*'",
 
 	"runArgs": [
 		// pass through all GPUs
@@ -27,11 +29,7 @@
 				"charliermarsh.ruff"
 			]
 		}
-	},
-
-	"mounts": [
-		"source=<PATH_TO_YOUR_DATA_FOLDER>,target=/workspaces/data,type=bind,consistency=cached"
-	]
+	}
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
