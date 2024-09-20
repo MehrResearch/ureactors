@@ -14,4 +14,11 @@ The Jupyter notebook `particle_stats.ipynb` is used for analyzing microscope ima
 * nvidia drivers if using a GPU for image processing (highly recommended)
 
 ### Setup
-The fastest way to get started is using a dev container. Simply open the folder in Visual Studio Code (locally or on a remote machine) and select "Reopen in Container" from the notification that appears. This will build the dev container and open the folder in a new window. All dependencies will be installed automatically.
+The fastest way to get started is using VS Code and [uv](https://astral.sh/uv):
+```sh
+uv sync
+```
+
+Visual Studio Code will detect the creation of a new virtual environment in `.venv` and suggest to use it.
+
+An alternative is using a dev container. Simply open the folder in Visual Studio Code (locally or on a remote machine) and select "Reopen in Container" from the notification that appears. This will build the dev container and open the folder in a new window. All dependencies will be installed automatically.
