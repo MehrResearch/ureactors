@@ -19,6 +19,12 @@ The fastest way to get started is using VS Code and [uv](https://astral.sh/uv):
 uv sync
 ```
 
+To download the paper dataset and extract it to the default location:
+```sh
+wget -nc -O "Microscope images.zip" "https://zenodo.org/records/13837238/files/Microscope%20images.zip?download=1"
+unzip "Microscope images.zip"
+```
+
 Visual Studio Code will detect the creation of a new virtual environment in `.venv` and suggest to use it.
 
-An alternative is using a dev container. Simply open the folder in Visual Studio Code (locally or on a remote machine) and select "Reopen in Container" from the notification that appears. This will build the dev container and open the folder in a new window. All dependencies will be installed automatically.
+An alternative is using a dev container. Simply open the folder in Visual Studio Code (locally or on a remote machine) and select "Reopen in Container" from the notification that appears. This will build the dev container and open the folder in a new window. All dependencies will be installed automatically and supporting data downloaded and extracted from Zenodo.
