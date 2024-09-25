@@ -14,7 +14,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "uv venv && uv pip install -r requirements.txt && wget -nc https://zenodo.org/records/11242499/files/Microscope%20images.zip?download=1 && unzip -d data 'Microscope images.zip?download=1' -x '__MACOSX/*'",
+	"postCreateCommand": "uv venv && uv pip install -r requirements.txt && wget -nc -O 'Microscope images.zip' 'https://zenodo.org/records/13837238/files/Microscope%20images.zip?download=1' && unzip 'Microscope images.zip",
 
 	"runArgs": [
 		// pass through all GPUs
